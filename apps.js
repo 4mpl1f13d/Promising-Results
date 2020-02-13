@@ -1,4 +1,5 @@
-// // Objective 1
+//
+// Objective 1
 // slowMath.add(6,2).then(result => {
 //     console.log(result);
 //     return slowMath.multiply(result, 2)
@@ -43,11 +44,13 @@
 // console.log(err)
 // });
 
+
+// Using Async/Await
 async function doMath() {
     try{
     let wait = await slowMath.add(6,2);
     console.log(wait);
-    wait= await slowMath.multiply(wait, 2)
+    wait= await slowMath.multiply(wait, 2);
     console.log(wait);
     wait = await slowMath.divide(wait, 4);
     console.log(wait);
